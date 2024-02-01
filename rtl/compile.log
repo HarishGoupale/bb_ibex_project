@@ -1,0 +1,83 @@
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+Start time: 16:06:54 on Jan 24,2024
+vlog -l compile.log -work work "+incdir+/cadtools/questa/questa_sim/verilog_src/uvm-1.1b/src" "+incdir+../lib" ibex_top.sv 
+-- Compiling package ibex_pkg
+-- Compiling module ibex_alu
+-- Importing package ibex_pkg
+** Warning: ** while parsing file included at ibex_top.sv(12)
+** while parsing file included at ibex_core_pkg.sv(10)
+** at ibex_alu.sv(26): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_compressed_decoder
+-- Compiling module ibex_controller
+** Warning: ** while parsing file included at ibex_top.sv(12)
+** while parsing file included at ibex_core_pkg.sv(12)
+** at ibex_controller.sv(77): (vlog-13314) Defaulting port 'irqs_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_counter
+-- Compiling module ibex_csr
+-- Compiling module ibex_cs_registers
+** Warning: ** while parsing file included at ibex_top.sv(12)
+** while parsing file included at ibex_core_pkg.sv(14)
+** at ibex_cs_registers.sv(103): (vlog-13314) Defaulting port 'csr_mcause_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_decoder
+-- Compiling module ibex_ex_block
+** Warning: ** while parsing file included at ibex_top.sv(12)
+** while parsing file included at ibex_core_pkg.sv(16)
+** at ibex_ex_block.sv(45): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_id_stage
+** Warning: ** while parsing file included at ibex_top.sv(12)
+** while parsing file included at ibex_core_pkg.sv(17)
+** at ibex_id_stage.sv(77): (vlog-13314) Defaulting port 'imd_val_d_ex_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at ibex_top.sv(12)
+** while parsing file included at ibex_core_pkg.sv(17)
+** at ibex_id_stage.sv(129): (vlog-13314) Defaulting port 'irqs_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_prefetch_buffer
+-- Compiling module ibex_if_stage
+** Warning: ** while parsing file included at ibex_top.sv(12)
+** while parsing file included at ibex_core_pkg.sv(18)
+** at ibex_if_stage.sv(54): (vlog-13314) Defaulting port 'ic_tag_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at ibex_top.sv(12)
+** while parsing file included at ibex_core_pkg.sv(18)
+** at ibex_if_stage.sv(59): (vlog-13314) Defaulting port 'ic_data_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at ibex_top.sv(12)
+** while parsing file included at ibex_core_pkg.sv(18)
+** at ibex_if_stage.sv(94): (vlog-13314) Defaulting port 'exc_cause' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_load_store_unit
+-- Compiling module ibex_multdiv_slow
+** Warning: ** while parsing file included at ibex_top.sv(12)
+** while parsing file included at ibex_core_pkg.sv(20)
+** at ibex_multdiv_slow.sv(34): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_multdiv_fast
+** Warning: ** while parsing file included at ibex_top.sv(12)
+** while parsing file included at ibex_core_pkg.sv(21)
+** at ibex_multdiv_fast.sv(38): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_fetch_fifo
+-- Compiling module ibex_register_file_ff
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at ibex_top.sv(12)
+** while parsing file included at ibex_core_pkg.sv(24)
+** at ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at ibex_top.sv(12)
+** while parsing file included at ibex_core_pkg.sv(25)
+** at ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at ibex_top.sv(12)
+** while parsing file included at ibex_core_pkg.sv(26)
+** at ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at ibex_top.sv(12)
+** while parsing file included at ibex_core_pkg.sv(27)
+** at ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_wb_stage
+-- Compiling module ibex_top
+
+Top level modules:
+	ibex_cs_registers
+	ibex_ex_block
+	ibex_id_stage
+	ibex_if_stage
+	ibex_load_store_unit
+	ibex_wb_stage
+	ibex_top
+End time: 16:06:55 on Jan 24,2024, Elapsed time: 0:00:01
+Errors: 0, Warnings: 15

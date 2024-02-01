@@ -1,0 +1,1083 @@
+QuestaSim-64 qrun 2021.3 Utility 2021.07 Jul 13 2021
+Start time: 04:00:08 on Jan 23,2024
+qrun -autoorder -batch -access=rw+/. -vcom.options -timescale 1ns/1ns -end -mfcu design.sv testbench.sv -vsim.options -voptargs="+acc=npr" -end -do " run -all; exit" 
+Creating library 'qrun.out/work'.
+QuestaSim-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+Start time: 04:00:08 on Jan 23,2024
+vlog -mfcu design.sv testbench.sv -work qrun.out/work -csession=incr -writesessionid "+qrun.out/top_dus" -statslog qrun.out/stats_log 
+-- Compiling package ibex_pkg
+-- Compiling module ibex_alu
+-- Importing package ibex_pkg
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(23): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(447): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(448): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(449): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(450): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(451): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(452): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(453): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(460): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(461): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(462): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(459): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(460): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(461): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(462): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(508): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(510): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(510): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(511): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(514): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(514): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(515): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(518): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(518): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(519): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(522): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(522): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(523): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(526): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(530): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(533): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(533): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(534): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(538): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(538): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(539): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(542): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(543): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(543): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(544): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(565): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(566): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(567): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(564): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(565): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(566): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(567): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(584): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(585): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(586): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(587): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(583): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(584): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(585): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(586): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(587): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(609): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(612): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(618): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(624): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(630): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(637): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(675): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(678): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(679): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(680): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(681): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(683): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(687): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(699): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(704): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(709): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(714): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(720): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(781): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(782): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(787): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(787): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(788): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(789): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(790): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(796): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(796): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(797): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(798): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(799): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(800): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(801): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(807): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(808): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(778): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(781): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(782): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(787): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(787): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(788): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(789): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(790): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(796): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(796): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(797): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(798): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(799): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(800): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(801): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(807): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(808): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(934): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(935): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(936): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(933): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(934): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(935): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(936): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(943): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(944): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(946): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(947): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(981): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(982): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(983): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(980): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(981): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(982): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(983): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1080): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1082): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1082): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1083): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1086): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1086): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1087): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1090): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1090): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1091): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1094): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1094): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1095): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1098): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1098): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1099): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1102): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1140): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1142): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1146): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1150): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1154): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1158): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1162): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1166): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1168): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1172): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1176): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1180): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1184): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1208): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1209): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1211): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1213): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1218): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1219): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1221): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1223): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1230): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1232): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1234): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1236): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1238): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1247): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1248): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1249): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1246): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1247): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1248): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1249): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1251): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1253): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1255): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1258): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1259): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1260): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1266): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1268): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1270): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1272): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1275): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1276): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1277): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1282): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1283): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1284): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1206): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1208): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1209): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1211): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1213): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1218): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1219): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1221): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1223): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1230): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1232): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1234): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1236): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1238): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1246): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1247): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1248): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1249): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1251): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1253): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1255): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1258): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1259): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1260): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1266): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1268): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1270): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1272): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1275): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1276): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1277): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1282): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1283): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(11)
+** at ibex_alu.sv(1284): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+-- Compiling module ibex_compressed_decoder
+-- Compiling module ibex_controller
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(77): (vlog-13314) Defaulting port 'irqs_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(242): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(243): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(244): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(245): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(246): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(247): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(253): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(255): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(257): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(259): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(261): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(263): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(271): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(272): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(273): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(274): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(275): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(276): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(279): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(281): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(283): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(285): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(287): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(289): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(322): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(323): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(324): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(330): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(335): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(13)
+** at ibex_controller.sv(336): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+-- Compiling module ibex_counter
+-- Compiling module ibex_csr
+-- Compiling module ibex_cs_registers
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(103): (vlog-13314) Defaulting port 'csr_mcause_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1113): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1115): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1123): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1127): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1154): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1155): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1156): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1158): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1159): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1153): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1153): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1153): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1154): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1155): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1156): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1158): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(15)
+** at ibex_cs_registers.sv(1159): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+-- Compiling module ibex_decoder
+-- Compiling module ibex_ex_block
+** Warning: ** while parsing file included at design.sv(17)
+** at ibex_ex_block.sv(45): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_id_stage
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(77): (vlog-13314) Defaulting port 'imd_val_d_ex_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(129): (vlog-13314) Defaulting port 'irqs_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(326): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(327): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(328): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(325): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(326): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(327): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(328): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(335): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(336): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(337): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(338): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(339): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(334): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(335): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(336): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(337): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(338): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(339): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(346): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(347): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(348): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(349): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(350): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(351): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(345): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(346): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(347): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(348): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(349): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(350): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(351): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(372): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(373): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(374): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(375): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(376): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(377): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(378): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(379): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(371): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(372): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(373): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(374): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(375): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(376): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(377): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(378): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(18)
+** at ibex_id_stage.sv(379): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+-- Compiling module ibex_prefetch_buffer
+-- Compiling module ibex_if_stage
+** Warning: ** while parsing file included at design.sv(19)
+** at ibex_if_stage.sv(54): (vlog-13314) Defaulting port 'ic_tag_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at design.sv(19)
+** at ibex_if_stage.sv(59): (vlog-13314) Defaulting port 'ic_data_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at design.sv(19)
+** at ibex_if_stage.sv(94): (vlog-13314) Defaulting port 'exc_cause' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_load_store_unit
+-- Compiling module ibex_multdiv_slow
+** Warning: ** while parsing file included at design.sv(21)
+** at ibex_multdiv_slow.sv(34): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_multdiv_fast
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(38): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(189): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(190): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(191): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(192): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(194): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(195): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(196): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(199): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(200): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(201): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(203): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(209): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(210): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(211): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(213): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(219): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(220): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(221): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(222): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(223): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(225): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(226): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(227): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(229): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(230): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(232): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(236): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(205): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(209): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(210): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(211): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(213): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(219): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(220): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(221): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(222): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(223): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(225): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(226): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(227): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(229): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(230): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(232): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(236): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(278): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(279): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(280): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(281): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(282): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(283): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(284): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(285): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(286): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(292): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(293): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(294): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(295): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(296): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(297): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(298): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(303): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(304): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(305): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(306): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(308): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(310): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(313): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(315): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(320): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(321): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(322): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(323): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(325): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(326): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(327): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(330): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(331): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(333): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(334): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(335): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(342): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(343): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(344): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(345): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(346): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(347): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(349): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(350): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(353): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(354): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(357): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(288): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(292): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(293): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(294): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(295): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(296): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(297): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(298): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(303): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(304): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(305): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(306): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(308): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(310): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(313): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(315): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(320): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(321): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(322): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(323): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(325): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(326): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(327): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(330): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(331): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(333): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(334): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(335): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(342): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(343): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(344): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(345): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(346): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(347): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(349): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(350): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(353): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(354): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ** while parsing file included at design.sv(22)
+** at ibex_multdiv_fast.sv(357): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+-- Compiling module ibex_fetch_fifo
+-- Compiling module ibex_register_file_ff
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at design.sv(25)
+** at ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at design.sv(26)
+** at ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at design.sv(27)
+** at ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at design.sv(28)
+** at ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_wb_stage
+-- Compiling module ibex_core
+** Warning: design.sv(110): (vlog-13314) Defaulting port 'ic_tag_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: design.sv(115): (vlog-13314) Defaulting port 'ic_data_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module tb
+
+Top level modules:
+	ibex_register_file_ff
+	tb
+End time: 04:00:08 on Jan 23,2024, Elapsed time: 0:00:00
+Errors: 0, Warnings: 466
+QuestaSim-64 vopt 2021.3 Compiler 2021.07 Jul 13 2021
+Start time: 04:00:09 on Jan 23,2024
+vopt -access=rw+/. -mfcu -findtoplevels /home/runner/qrun.out/work+0+ -work qrun.out/work -statslog qrun.out/stats_log -o qrun_opt 
+
+Top level modules:
+	ibex_register_file_ff
+	tb
+
+Analyzing design...
+-- Loading module ibex_register_file_ff
+-- Loading module tb
+-- Loading module ibex_core
+-- Importing package ibex_pkg
+-- Loading module ibex_if_stage
+-- Loading module ibex_compressed_decoder
+-- Loading module ibex_id_stage
+-- Loading module ibex_decoder
+-- Loading module ibex_controller
+-- Loading module ibex_ex_block
+-- Loading module ibex_alu
+-- Loading module ibex_load_store_unit
+-- Loading module ibex_wb_stage
+-- Loading module ibex_cs_registers
+-- Loading module ibex_csr
+-- Loading module ibex_counter
+-- Loading module ibex_prefetch_buffer
+-- Loading module ibex_fetch_fifo
+-- Loading module ibex_multdiv_fast
+Optimizing 27 design-units (inlining 31/33 module instances):
+-- Optimizing package ibex_pkg(fast)
+-- Inlining module ibex_fetch_fifo(fast)
+-- Inlining module ibex_prefetch_buffer(fast)
+-- Inlining module ibex_compressed_decoder(fast)
+-- Inlining module ibex_if_stage(fast)
+** Warning: ibex_if_stage.sv(54): (vopt-13314) Defaulting port 'ic_tag_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ibex_if_stage.sv(59): (vopt-13314) Defaulting port 'ic_data_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ibex_if_stage.sv(94): (vopt-13314) Defaulting port 'exc_cause' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Inlining module ibex_decoder(fast)
+-- Inlining module ibex_controller(fast)
+** Warning: ibex_controller.sv(77): (vopt-13314) Defaulting port 'irqs_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Inlining module ibex_id_stage(fast)
+** Warning: ibex_id_stage.sv(77): (vopt-13314) Defaulting port 'imd_val_d_ex_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ibex_id_stage.sv(129): (vopt-13314) Defaulting port 'irqs_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Inlining module ibex_alu(fast)
+** Warning: ibex_alu.sv(23): (vopt-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Inlining module ibex_multdiv_fast(fast)
+** Warning: ibex_multdiv_fast.sv(38): (vopt-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Inlining module ibex_ex_block(fast)
+** Warning: ibex_ex_block.sv(45): (vopt-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Inlining module ibex_load_store_unit(fast)
+-- Inlining module ibex_wb_stage(fast)
+-- Inlining module ibex_csr(fast)
+-- Inlining module ibex_csr(fast__1)
+-- Inlining module ibex_csr(fast__2)
+-- Inlining module ibex_csr(fast__3)
+-- Inlining module ibex_csr(fast__4)
+-- Inlining module ibex_csr(fast__5)
+-- Inlining module ibex_csr(fast__6)
+-- Inlining module ibex_counter(fast)
+-- Inlining module ibex_counter(fast__1)
+-- Inlining module ibex_csr(fast__7)
+-- Inlining module ibex_cs_registers(fast)
+** Warning: ibex_cs_registers.sv(103): (vopt-13314) Defaulting port 'csr_mcause_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Inlining module ibex_core(fast)
+** Warning: design.sv(110): (vopt-13314) Defaulting port 'ic_tag_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: design.sv(115): (vopt-13314) Defaulting port 'ic_data_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Optimizing module tb(fast)
+** Warning: testbench.sv(63): (vopt-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 54, found 46.
+** Warning: testbench.sv(63): (vopt-2718) [TFMPC] - Missing connection for port 'core_busy_o'.
+** Warning: testbench.sv(63): (vopt-2718) [TFMPC] - Missing connection for port 'alert_major_bus_o'.
+** Warning: testbench.sv(63): (vopt-2718) [TFMPC] - Missing connection for port 'alert_major_internal_o'.
+** Warning: testbench.sv(63): (vopt-2718) [TFMPC] - Missing connection for port 'alert_minor_o'.
+** Warning: testbench.sv(63): (vopt-2718) [TFMPC] - Missing connection for port 'fetch_enable_i'.
+** Warning: testbench.sv(63): (vopt-2718) [TFMPC] - Missing connection for port 'double_fault_seen_o'.
+** Warning: testbench.sv(63): (vopt-2718) [TFMPC] - Missing connection for port 'crash_dump_o'.
+** Warning: testbench.sv(63): (vopt-2718) [TFMPC] - Missing connection for port 'debug_req_i'.
+-- Optimizing module ibex_register_file_ff(fast)
+Optimized design name is qrun_opt
+End time: 04:00:09 on Jan 23,2024, Elapsed time: 0:00:00
+Errors: 0, Warnings: 21
+# vsim -batch -voptargs="+acc=npr" -lib qrun.out/work -do " run -all; exit" -statslog qrun.out/stats_log qrun_opt -appendlog -l qrun.log 
+# Start time: 04:00:09 on Jan 23,2024
+# Loading /tmp/unknown@bcd5447a064c_dpi_8/linux_x86_64_gcc-7.4.0/export_tramp.so
+# //  Questa Sim-64
+# //  Version 2021.3 linux_x86_64 Jul 13 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.ibex_register_file_ff(fast)
+# Loading work.ibex_pkg(fast)
+# Loading work.tb(fast)
+# Compiling /tmp/unknown@bcd5447a064c_dpi_8/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/unknown@bcd5447a064c_dpi_8/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# 
+# run -all
+# ** Note: $finish    : testbench.sv(138)
+#    Time: 515 ns  Iteration: 0  Instance: /tb
+# End time: 04:00:10 on Jan 23,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# *** Summary *********************************************
+#     qrun: Errors:   0, Warnings:   0
+#     vlog: Errors:   0, Warnings: 466
+#     vopt: Errors:   0, Warnings:  42
+#     vsim: Errors:   0, Warnings:   0
+#   Totals: Errors:   0, Warnings: 508
