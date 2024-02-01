@@ -1,0 +1,396 @@
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+Start time: 16:39:22 on Feb 01,2024
+vlog -l compile.log -work work "+incdir+/cadtools/questa/questa_sim/verilog_src/uvm-1.1b/src" "+incdir+../lib" "+define+RVFI" ../DV/ibex_dv_pkg.sv ../rtl/ibex_core_pkg.sv ../rtl/ibex_top.sv ../DV/core_ibex_tb_top.sv 
+-- Compiling package bus_params_pkg
+-- Compiling package common_ifs_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling interface clk_rst_if
+** Note: (vlog-2286) ../DV/clk_rst_if.sv(25): Using implicit +incdir+/usr/local/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Importing package common_ifs_pkg
+-- Compiling interface irq_if
+-- Compiling interface ibex_mem_intf
+-- Compiling package str_utils_pkg
+-- Compiling package dv_utils_pkg
+-- Importing package bus_params_pkg
+-- Importing package str_utils_pkg
+-- Compiling package ibex_pkg
+-- Compiling interface core_ibex_dut_probe_if
+-- Importing package ibex_pkg
+-- Importing package dv_utils_pkg
+-- Compiling interface core_ibex_instr_monitor_if
+-- Compiling interface core_ibex_rvfi_if
+-- Compiling interface core_ibex_csr_if
+-- Compiling interface core_ibex_ifetch_if
+-- Compiling interface core_ibex_ifetch_pmp_if
+-- Compiling interface push_pull_if
+-- Compiling package ibex_mem_intf_pkg
+-- Compiling package ibex_pkg
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(3)
+** at ../rtl/ibex_pkg.sv(12): (vlog-2275) Existing package 'ibex_pkg' at line 12 will be overwritten.
+-- Compiling module ibex_alu
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(10)
+** at ../rtl/ibex_alu.sv(26): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_compressed_decoder
+-- Compiling module ibex_controller
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(12)
+** at ../rtl/ibex_controller.sv(77): (vlog-13314) Defaulting port 'irqs_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_counter
+-- Compiling module ibex_csr
+-- Compiling module ibex_cs_registers
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(14)
+** at ../rtl/ibex_cs_registers.sv(103): (vlog-13314) Defaulting port 'csr_mcause_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_decoder
+-- Compiling module ibex_ex_block
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(16)
+** at ../rtl/ibex_ex_block.sv(45): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_id_stage
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(17)
+** at ../rtl/ibex_id_stage.sv(77): (vlog-13314) Defaulting port 'imd_val_d_ex_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(17)
+** at ../rtl/ibex_id_stage.sv(129): (vlog-13314) Defaulting port 'irqs_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_prefetch_buffer
+-- Compiling module ibex_if_stage
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(18)
+** at ../rtl/ibex_if_stage.sv(54): (vlog-13314) Defaulting port 'ic_tag_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(18)
+** at ../rtl/ibex_if_stage.sv(59): (vlog-13314) Defaulting port 'ic_data_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(18)
+** at ../rtl/ibex_if_stage.sv(94): (vlog-13314) Defaulting port 'exc_cause' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_load_store_unit
+-- Compiling module ibex_multdiv_slow
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(20)
+** at ../rtl/ibex_multdiv_slow.sv(34): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_multdiv_fast
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(21)
+** at ../rtl/ibex_multdiv_fast.sv(38): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_fetch_fifo
+-- Compiling module ibex_register_file_ff
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(24)
+** at ../rtl/ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(25)
+** at ../rtl/ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(26)
+** at ../rtl/ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(27)
+** at ../rtl/ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_wb_stage
+-- Compiling package prim_ram_1p_pkg
+-- Compiling module prim_clock_gating
+-- Compiling module prim_generic_buf
+-- Compiling module prim_buf
+-- Compiling interface core_ibex_fcov_if
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(33)
+** at ../rtl/core_ibex_fcov_if.sv(680): (vlog-2727) One of implicit coverpoints at line '680' is a duplicate of the explicitly declared coverpoint 'cp_wb_stage_state' at line '433'. The coverage score may be skewed as a result.
+-- Compiling module ibex_core
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(34)
+** at ../rtl/ibex_core.sv(93): (vlog-13314) Defaulting port 'ic_tag_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(34)
+** at ../rtl/ibex_core.sv(98): (vlog-13314) Defaulting port 'ic_data_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling package ibex_tracer_pkg
+-- Compiling module ibex_tracer
+-- Importing package ibex_tracer_pkg
+-- Compiling module ibex_top_tracing
+-- Importing package prim_ram_1p_pkg
+** Warning: ** while parsing file included at ../rtl/ibex_core_pkg.sv(37)
+** at ../rtl/ibex_top_tracing.sv(39): (vlog-13314) Defaulting port 'ram_cfg_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling package ibex_pkg
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(3)
+** at ../rtl/ibex_pkg.sv(12): (vlog-2275) Existing package 'ibex_pkg' at line 12 will be overwritten.
+-- Compiling module ibex_alu
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(10)
+** at ../rtl/ibex_alu.sv(12): (vlog-2275) Existing module 'ibex_alu' at line 12 will be overwritten.
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(10)
+** at ../rtl/ibex_alu.sv(26): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_compressed_decoder
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(11)
+** at ../rtl/ibex_compressed_decoder.sv(16): (vlog-2275) Existing module 'ibex_compressed_decoder' at line 16 will be overwritten.
+-- Compiling module ibex_controller
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(12)
+** at ../rtl/ibex_controller.sv(13): (vlog-2275) Existing module 'ibex_controller' at line 13 will be overwritten.
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(12)
+** at ../rtl/ibex_controller.sv(77): (vlog-13314) Defaulting port 'irqs_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_counter
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(13)
+** at ../rtl/ibex_counter.sv(1): (vlog-2275) Existing module 'ibex_counter' at line 1 will be overwritten.
+-- Compiling module ibex_csr
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(14)
+** while parsing file included at ../rtl/ibex_cs_registers.sv(11)
+** at ../rtl/ibex_csr.sv(11): (vlog-2275) Existing module 'ibex_csr' at line 11 will be overwritten.
+-- Compiling module ibex_cs_registers
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(14)
+** at ../rtl/ibex_cs_registers.sv(13): (vlog-2275) Existing module 'ibex_cs_registers' at line 13 will be overwritten.
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(14)
+** at ../rtl/ibex_cs_registers.sv(103): (vlog-13314) Defaulting port 'csr_mcause_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_decoder
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(15)
+** at ../rtl/ibex_decoder.sv(16): (vlog-2275) Existing module 'ibex_decoder' at line 16 will be overwritten.
+-- Compiling module ibex_ex_block
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(16)
+** at ../rtl/ibex_ex_block.sv(11): (vlog-2275) Existing module 'ibex_ex_block' at line 11 will be overwritten.
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(16)
+** at ../rtl/ibex_ex_block.sv(45): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_id_stage
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(17)
+** at ../rtl/ibex_id_stage.sv(20): (vlog-2275) Existing module 'ibex_id_stage' at line 20 will be overwritten.
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(17)
+** at ../rtl/ibex_id_stage.sv(77): (vlog-13314) Defaulting port 'imd_val_d_ex_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(17)
+** at ../rtl/ibex_id_stage.sv(129): (vlog-13314) Defaulting port 'irqs_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_prefetch_buffer
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(18)
+** while parsing file included at ../rtl/ibex_if_stage.sv(16)
+** at ../rtl/ibex_prefetch_buffer.sv(12): (vlog-2275) Existing module 'ibex_prefetch_buffer' at line 12 will be overwritten.
+-- Compiling module ibex_if_stage
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(18)
+** at ../rtl/ibex_if_stage.sv(17): (vlog-2275) Existing module 'ibex_if_stage' at line 17 will be overwritten.
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(18)
+** at ../rtl/ibex_if_stage.sv(54): (vlog-13314) Defaulting port 'ic_tag_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(18)
+** at ../rtl/ibex_if_stage.sv(59): (vlog-13314) Defaulting port 'ic_data_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(18)
+** at ../rtl/ibex_if_stage.sv(94): (vlog-13314) Defaulting port 'exc_cause' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_load_store_unit
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(19)
+** at ../rtl/ibex_load_store_unit.sv(17): (vlog-2275) Existing module 'ibex_load_store_unit' at line 17 will be overwritten.
+-- Compiling module ibex_multdiv_slow
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(20)
+** at ../rtl/ibex_multdiv_slow.sv(14): (vlog-2275) Existing module 'ibex_multdiv_slow' at line 14 will be overwritten.
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(20)
+** at ../rtl/ibex_multdiv_slow.sv(34): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_multdiv_fast
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(21)
+** at ../rtl/ibex_multdiv_fast.sv(17): (vlog-2275) Existing module 'ibex_multdiv_fast' at line 17 will be overwritten.
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(21)
+** at ../rtl/ibex_multdiv_fast.sv(38): (vlog-13314) Defaulting port 'imd_val_q_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_fetch_fifo
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(22)
+** at ../rtl/ibex_fetch_fifo.sv(15): (vlog-2275) Existing module 'ibex_fetch_fifo' at line 15 will be overwritten.
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(23)
+** at ../rtl/ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(24)
+** at ../rtl/ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(25)
+** at ../rtl/ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(26)
+** at ../rtl/ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_register_file_ff
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(27)
+** at ../rtl/ibex_register_file_ff.sv(13): (vlog-2275) Existing module 'ibex_register_file_ff' at line 13 will be overwritten.
+-- Compiling module ibex_wb_stage
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(28)
+** at ../rtl/ibex_wb_stage.sv(17): (vlog-2275) Existing module 'ibex_wb_stage' at line 17 will be overwritten.
+-- Compiling package prim_ram_1p_pkg
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(29)
+** at ../rtl/prim_ram_1p_pkg.sv(6): (vlog-2275) Existing package 'prim_ram_1p_pkg' at line 6 will be overwritten.
+-- Compiling module prim_clock_gating
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(30)
+** at ../rtl/prim_clock_gating.v(7): (vlog-2275) Existing module 'prim_clock_gating' at line 7 will be overwritten.
+-- Compiling module prim_generic_buf
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(31)
+** at ../rtl/prim_generic_buf.sv(7): (vlog-2275) Existing module 'prim_generic_buf' at line 7 will be overwritten.
+-- Compiling module prim_buf
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(32)
+** at ../rtl/prim_buf.sv(11): (vlog-2275) Existing module 'prim_buf' at line 11 will be overwritten.
+-- Compiling interface core_ibex_fcov_if
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(33)
+** at ../rtl/core_ibex_fcov_if.sv(8): (vlog-2275) Existing interface 'core_ibex_fcov_if' at line 8 will be overwritten.
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(33)
+** at ../rtl/core_ibex_fcov_if.sv(680): (vlog-2727) One of implicit coverpoints at line '680' is a duplicate of the explicitly declared coverpoint 'cp_wb_stage_state' at line '433'. The coverage score may be skewed as a result.
+-- Compiling module ibex_core
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(34)
+** at ../rtl/ibex_core.sv(16): (vlog-2275) Existing module 'ibex_core' at line 16 will be overwritten.
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(34)
+** at ../rtl/ibex_core.sv(93): (vlog-13314) Defaulting port 'ic_tag_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(34)
+** at ../rtl/ibex_core.sv(98): (vlog-13314) Defaulting port 'ic_data_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling package ibex_tracer_pkg
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(35)
+** at ../rtl/ibex_tracer_pkg.sv(6): (vlog-2275) Existing package 'ibex_tracer_pkg' at line 6 will be overwritten.
+-- Compiling module ibex_tracer
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(36)
+** at ../rtl/ibex_tracer.sv(37): (vlog-2275) Existing module 'ibex_tracer' at line 37 will be overwritten.
+-- Compiling module ibex_top_tracing
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(37)
+** at ../rtl/ibex_top_tracing.sv(9): (vlog-2275) Existing module 'ibex_top_tracing' at line 9 will be overwritten.
+** Warning: ** while parsing file included at ../rtl/ibex_top.sv(12)
+** while parsing file included at ../rtl/ibex_core_pkg.sv(37)
+** at ../rtl/ibex_top_tracing.sv(39): (vlog-13314) Defaulting port 'ram_cfg_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling module ibex_top
+** Warning: ../rtl/ibex_top.sv(1152): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ../rtl/ibex_top.sv(1156): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: ../rtl/ibex_top.sv(1158): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+-- Compiling package ibex_mem_intf_pkg
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(8)
+** while parsing file included at ../DV/core_ibex_env_pkg.sv(9)
+** while parsing file included at ../DV/ibex_mem_intf_agent_pkg.sv(5)
+** at ../DV/ibex_mem_intf_pkg.sv(5): (vlog-2275) Existing package 'ibex_mem_intf_pkg' at line 5 will be overwritten.
+-- Compiling package mem_model_pkg
+-- Compiling package prim_secded_pkg
+-- Compiling package ibex_cosim_agent_pkg
+-- Importing package ibex_mem_intf_pkg
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(8)
+** while parsing file included at ../DV/core_ibex_env_pkg.sv(9)
+** while parsing file included at ../DV/ibex_mem_intf_agent_pkg.sv(8)
+** at ../DV/ibex_cosim_scoreboard.sv(132): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(8)
+** while parsing file included at ../DV/core_ibex_env_pkg.sv(9)
+** while parsing file included at ../DV/ibex_mem_intf_agent_pkg.sv(8)
+** at ../DV/ibex_cosim_scoreboard.sv(139): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(8)
+** while parsing file included at ../DV/core_ibex_env_pkg.sv(9)
+** while parsing file included at ../DV/ibex_mem_intf_agent_pkg.sv(8)
+** at ../DV/ibex_cosim_scoreboard.sv(324): (vlog-2240) Treating stand-alone use of function 'pop_back' as an implicit VOID cast.
+-- Compiling package ibex_mem_intf_agent_pkg
+-- Importing package mem_model_pkg
+-- Importing package ibex_cosim_agent_pkg
+-- Importing package prim_secded_pkg
+-- Compiling package irq_agent_pkg
+-- Compiling package ibex_cosim_agent_pkg
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(8)
+** while parsing file included at ../DV/core_ibex_env_pkg.sv(11)
+** at ../DV/ibex_cosim_agent_pkg.sv(5): (vlog-2275) Existing package 'ibex_cosim_agent_pkg' at line 5 will be overwritten.
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(8)
+** while parsing file included at ../DV/core_ibex_env_pkg.sv(11)
+** at ../DV/ibex_cosim_scoreboard.sv(132): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(8)
+** while parsing file included at ../DV/core_ibex_env_pkg.sv(11)
+** at ../DV/ibex_cosim_scoreboard.sv(139): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(8)
+** while parsing file included at ../DV/core_ibex_env_pkg.sv(11)
+** at ../DV/ibex_cosim_scoreboard.sv(324): (vlog-2240) Treating stand-alone use of function 'pop_back' as an implicit VOID cast.
+-- Compiling package core_ibex_env_pkg
+-- Importing package ibex_mem_intf_agent_pkg
+-- Importing package irq_agent_pkg
+-- Compiling package ibex_mem_intf_pkg
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(9)
+** while parsing file included at ../DV/ibex_mem_intf_agent_pkg.sv(5)
+** at ../DV/ibex_mem_intf_pkg.sv(5): (vlog-2275) Existing package 'ibex_mem_intf_pkg' at line 5 will be overwritten.
+-- Compiling package mem_model_pkg
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(9)
+** while parsing file included at ../DV/ibex_mem_intf_agent_pkg.sv(6)
+** at ../DV/mem_model_pkg.sv(5): (vlog-2275) Existing package 'mem_model_pkg' at line 5 will be overwritten.
+-- Compiling package prim_secded_pkg
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(9)
+** while parsing file included at ../DV/ibex_mem_intf_agent_pkg.sv(7)
+** at ../DV/prim_secded_pkg.sv(8): (vlog-2275) Existing package 'prim_secded_pkg' at line 8 will be overwritten.
+-- Compiling package ibex_cosim_agent_pkg
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(9)
+** while parsing file included at ../DV/ibex_mem_intf_agent_pkg.sv(8)
+** at ../DV/ibex_cosim_agent_pkg.sv(5): (vlog-2275) Existing package 'ibex_cosim_agent_pkg' at line 5 will be overwritten.
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(9)
+** while parsing file included at ../DV/ibex_mem_intf_agent_pkg.sv(8)
+** at ../DV/ibex_cosim_scoreboard.sv(132): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(9)
+** while parsing file included at ../DV/ibex_mem_intf_agent_pkg.sv(8)
+** at ../DV/ibex_cosim_scoreboard.sv(139): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(9)
+** while parsing file included at ../DV/ibex_mem_intf_agent_pkg.sv(8)
+** at ../DV/ibex_cosim_scoreboard.sv(324): (vlog-2240) Treating stand-alone use of function 'pop_back' as an implicit VOID cast.
+-- Compiling package ibex_mem_intf_agent_pkg
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(9)
+** at ../DV/ibex_mem_intf_agent_pkg.sv(10): (vlog-2275) Existing package 'ibex_mem_intf_agent_pkg' at line 10 will be overwritten.
+-- Compiling package core_ibex_test_pkg
+-- Importing package core_ibex_env_pkg
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(52)
+** while parsing macro expansion: 'DV_CHECK_RANDOMIZE_WITH_FATAL' starting at ../DV/core_ibex_seq_lib.sv(109)
+** at ../DV/core_ibex_seq_lib.sv(109): (vlog-2643) Unterminated string literal continues onto next line.
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(52)
+** while parsing macro expansion: 'DV_CHECK_RANDOMIZE_WITH_FATAL' starting at ../DV/core_ibex_seq_lib.sv(128)
+** at ../DV/core_ibex_seq_lib.sv(128): (vlog-2643) Unterminated string literal continues onto next line.
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(52)
+** while parsing macro expansion: 'DV_CHECK_RANDOMIZE_WITH_FATAL' starting at ../DV/core_ibex_seq_lib.sv(144)
+** at ../DV/core_ibex_seq_lib.sv(144): (vlog-2643) Unterminated string literal continues onto next line.
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(53)
+** while parsing macro expansion: 'DV_CHECK_RANDOMIZE_WITH_FATAL' starting at ../DV/core_ibex_new_seq_lib.sv(150)
+** at ../DV/core_ibex_new_seq_lib.sv(150): (vlog-2643) Unterminated string literal continues onto next line.
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(56)
+** at ../DV/core_ibex_test_lib.sv(257): (vlog-2897) Using non-standard foreach loop variable list syntax.
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** while parsing file included at ../DV/core_ibex_test_pkg.sv(56)
+** at ../DV/core_ibex_test_lib.sv(260): (vlog-2897) Using non-standard foreach loop variable list syntax.
+** Warning: ../DV/core_ibex_base_test.sv(97): (vlog-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** at ../DV/core_ibex_test_lib.sv(662): (vlog-2240) Treating stand-alone use of function 'determine_irq_from_txn' as an implicit VOID cast.
+** Warning: ** while parsing file included at ../DV/core_ibex_tb_top.sv(6)
+** at ../DV/core_ibex_new_seq_lib.sv(56): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+-- Compiling module core_ibex_tb_top
+-- Importing package core_ibex_test_pkg
+
+Top level modules:
+	core_ibex_tb_top
+End time: 16:39:24 on Feb 01,2024, Elapsed time: 0:00:02
+Errors: 0, Warnings: 94
