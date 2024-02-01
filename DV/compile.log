@@ -1,0 +1,84 @@
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+Start time: 11:14:11 on Jan 25,2024
+vlog -l compile.log -work work "+incdir+/cadtools/questa/questa_sim/verilog_src/uvm-1.1b/src" "+incdir+../lib" ibex_dv_pkg.sv core_ibex_tb_top.sv 
+-- Compiling package str_utils_pkg
+-- Compiling package dv_utils_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package bus_params_pkg
+-- Importing package str_utils_pkg
+-- Compiling package ibex_pkg
+-- Compiling package bus_params_pkg
+-- Compiling package prim_secded_pkg
+-- Compiling package irq_agent_pkg
+** Note: (vlog-2286) irq_agent_pkg.sv(12): Using implicit +incdir+/usr/local/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package ibex_cosim_agent_pkg
+-- Importing package ibex_mem_intf_pkg
+-- Importing package ibex_pkg
+** Warning: ** while parsing file included at ibex_dv_pkg.sv(9)
+** at ibex_cosim_scoreboard.sv(132): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+** Warning: ** while parsing file included at ibex_dv_pkg.sv(9)
+** at ibex_cosim_scoreboard.sv(138): (vlog-2240) Treating stand-alone use of function 'riscv_cosim_set_iside_error' as an implicit VOID cast.
+** Warning: ** while parsing file included at ibex_dv_pkg.sv(9)
+** at ibex_cosim_scoreboard.sv(139): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+** Warning: ** while parsing file included at ibex_dv_pkg.sv(9)
+** at ibex_cosim_scoreboard.sv(324): (vlog-2240) Treating stand-alone use of function 'pop_back' as an implicit VOID cast.
+-- Compiling package ibex_mem_intf_pkg
+-- Compiling package mem_model_pkg
+-- Compiling package ibex_mem_intf_agent_pkg
+-- Importing package mem_model_pkg
+-- Importing package ibex_cosim_agent_pkg
+-- Importing package prim_secded_pkg
+-- Compiling package core_ibex_env_pkg
+-- Importing package ibex_mem_intf_agent_pkg
+-- Importing package irq_agent_pkg
+-- Compiling package ibex_mem_intf_pkg
+** Warning: ** while parsing file included at core_ibex_tb_top.sv(6)
+** while parsing file included at core_ibex_test_pkg.sv(9)
+** while parsing file included at ibex_mem_intf_agent_pkg.sv(5)
+** at ibex_mem_intf_pkg.sv(5): (vlog-2275) Existing package 'ibex_mem_intf_pkg' at line 5 will be overwritten.
+-- Compiling package mem_model_pkg
+** Warning: ** while parsing file included at core_ibex_tb_top.sv(6)
+** while parsing file included at core_ibex_test_pkg.sv(9)
+** while parsing file included at ibex_mem_intf_agent_pkg.sv(6)
+** at mem_model_pkg.sv(5): (vlog-2275) Existing package 'mem_model_pkg' at line 5 will be overwritten.
+-- Compiling package ibex_mem_intf_agent_pkg
+** Warning: ** while parsing file included at core_ibex_tb_top.sv(6)
+** while parsing file included at core_ibex_test_pkg.sv(9)
+** at ibex_mem_intf_agent_pkg.sv(8): (vlog-2275) Existing package 'ibex_mem_intf_agent_pkg' at line 8 will be overwritten.
+-- Compiling package core_ibex_test_pkg
+-- Importing package core_ibex_env_pkg
+** Warning: ** while parsing file included at core_ibex_tb_top.sv(6)
+** while parsing file included at core_ibex_test_pkg.sv(52)
+** while parsing macro expansion: 'DV_CHECK_RANDOMIZE_WITH_FATAL' starting at core_ibex_seq_lib.sv(109)
+** at core_ibex_seq_lib.sv(109): (vlog-2643) Unterminated string literal continues onto next line.
+** Warning: ** while parsing file included at core_ibex_tb_top.sv(6)
+** while parsing file included at core_ibex_test_pkg.sv(52)
+** while parsing macro expansion: 'DV_CHECK_RANDOMIZE_WITH_FATAL' starting at core_ibex_seq_lib.sv(128)
+** at core_ibex_seq_lib.sv(128): (vlog-2643) Unterminated string literal continues onto next line.
+** Warning: ** while parsing file included at core_ibex_tb_top.sv(6)
+** while parsing file included at core_ibex_test_pkg.sv(52)
+** while parsing macro expansion: 'DV_CHECK_RANDOMIZE_WITH_FATAL' starting at core_ibex_seq_lib.sv(144)
+** at core_ibex_seq_lib.sv(144): (vlog-2643) Unterminated string literal continues onto next line.
+** Warning: ** while parsing file included at core_ibex_tb_top.sv(6)
+** while parsing file included at core_ibex_test_pkg.sv(53)
+** while parsing macro expansion: 'DV_CHECK_RANDOMIZE_WITH_FATAL' starting at core_ibex_new_seq_lib.sv(150)
+** at core_ibex_new_seq_lib.sv(150): (vlog-2643) Unterminated string literal continues onto next line.
+-- Importing package dv_utils_pkg
+** Warning: ** while parsing file included at core_ibex_tb_top.sv(6)
+** while parsing file included at core_ibex_test_pkg.sv(56)
+** at core_ibex_test_lib.sv(257): (vlog-2897) Using non-standard foreach loop variable list syntax.
+** Warning: ** while parsing file included at core_ibex_tb_top.sv(6)
+** while parsing file included at core_ibex_test_pkg.sv(56)
+** at core_ibex_test_lib.sv(260): (vlog-2897) Using non-standard foreach loop variable list syntax.
+** Warning: core_ibex_base_test.sv(97): (vlog-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
+** Warning: ** while parsing file included at core_ibex_tb_top.sv(6)
+** at core_ibex_test_lib.sv(662): (vlog-2240) Treating stand-alone use of function 'determine_irq_from_txn' as an implicit VOID cast.
+** Warning: ** while parsing file included at core_ibex_tb_top.sv(6)
+** at core_ibex_new_seq_lib.sv(56): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+-- Compiling module core_ibex_tb_top
+-- Importing package core_ibex_test_pkg
+
+Top level modules:
+	core_ibex_tb_top
+End time: 11:14:12 on Jan 25,2024, Elapsed time: 0:00:01
+Errors: 0, Warnings: 16
